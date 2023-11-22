@@ -635,14 +635,13 @@ function __doPostBack(eventTarget, eventArgument) {
       <br>
    </div>
 
-    <table width="920px">
-        <tbody><tr>
-            <td width="50%">
-                <span class="aspNetDisabled" title="Check to enter System UUID, uncheck to ignore it"><input id="ctl00_MainContent_IgnoreUUID" type="checkbox" name="ctl00$MainContent$IgnoreUUID" checked="checked" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$IgnoreUUID\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="ctl00_MainContent_IgnoreUUID">Summary of SMC Parameters：</label></span>
-		<br>
-                <textarea name="ctl00$MainContent$SystemGUID" rows="2" cols="20" id="ctl00_MainContent_SystemGUID" title="Insert UUID(s) in CSV format" style="font-family:Consolas;height:160px;width: 400px"></textarea>
-		<button type="submit">Save</button>
-	      </td>
+<table width="920px">
+   <td width="50%">
+        <label for="Summary of SMC Parameter">Summary of SMC Parameters：</label>				
+	<br>
+        <textarea style="font-family:Consolas;height:160px;width: 400px"></textarea>
+	<input type="button" name="DownloadButton" value="Save" id="Save" style="width:120px;">
+   </td>
    
 <script type="text/javascript">new Sys.WebForms.Menu({ element: 'ctl00_NavigationMenu', disappearAfter: 500, orientation: 'horizontal', tabIndex: 0, disabled: false });</script>
 <script type="text/javascript">
